@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ryan's AI Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="portfolio-container">
+    <div class="security-bar">
+      <span>🔒 Public Sandbox Mode</span>
+      <div class="api-input-wrapper">
+        <input type="password" id="customKeyInput" placeholder="Optional: Enter custom Groq Key...">
+      </div>
+    </div>
+
+    <header>
+      <h1>Ryan's AI Portfolio</h1>
+      <p>Exploring the frontier of human-AI collaboration.</p>
+    </header>
+
+    <section class="ai-box">
+      <div class="sandbox-header">
+        <h2>🤖 Live AI Sandbox</h2>
+        <div class="dropdown-wrapper">
+          <label for="agentMode">Engine Blueprint:</label>
+          <select id="agentMode">
+            <option value="standard">Standard Chat Assistant</option>
+            <option value="swarm">📊 Finance Swarm Orchestrator</option>
+          </select>
+        </div>
+      </div>
+      <p class="subtitle">Select a blueprint mode, type a prompt, and watch the AI engine stream data packets.</p>
+      
+      <div class="input-group">
+        <input type="text" id="userInput" placeholder="e.g., Analyze Apple (AAPL) stock performance...">
+        <button id="generateBtn">Run AI Agent</button>
+      </div>
+
+      <div class="output-window">
+        <div class="status-bar">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+          <span id="statusText">Status: Ready</span>
+        </div>
+        <div class="output-content" id="outputContent">Waiting for your command...</div>
+      </div>
+    </section>
+
+    <section class="projects-section">
+      <h2>📁 Future AI Deployments</h2>
+      <p class="section-subtitle">Clicking these projects will unlock their dedicated AI pipelines soon.</p>
+      
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="card-icon">🎨</div>
+          <h3>Prompt Studio</h3>
+          <p>An advanced engineering playground designed to optimize, test, and version multi-turn system instructions.</p>
+          <span class="tag">Next Generation</span>
+        </div>
+
+        <div class="project-card active-card">
+          <div class="card-icon">📊</div>
+          <h3>Finance Agent Swarm</h3>
+          <p>A multi-agent network that scrapes live stock indicators, compiles sentiment graphs, and drafts portfolio updates.</p>
+          <span class="tag live-tag">Live in Sandbox Above</span>
+        </div>
+
+        <div class="project-card">
+          <div class="card-icon">🕷️</div>
+          <h3>Autonomous Web Crawler</h3>
+          <p>A specialized vision crawler capable of mapping complex HTML DOM trees and restructuring public text datasets.</p>
+          <span class="tag">Concept</span>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
